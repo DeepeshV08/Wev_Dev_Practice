@@ -1,0 +1,19 @@
+Node.js is used to create server
+
+Nodejs is javascript run time enviroment 
+
+
+Installing Nodejs and npm 
+Nodejs download- go to browser and type nodejs and then download by node website
+NPM - node package manager
+
+Working with Modules
+
+
+File system operation
+Understanding HTTP Modules
+
+
+How to create a server
+
+1. npm init -y
