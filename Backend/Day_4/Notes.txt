@@ -1,0 +1,15 @@
+Express.js Framework :
+
+Introduction to Express.js
+// express js ek npm package hai
+// Framework 
+// it manages everything from receiving the request and giving the response
+
+
+
+we can create routes using express js
+example 
+www.google.com/anything
+
+middleware
+jab bhi server request accept karta hai , waha se route ke bich pahuchne tak agar aap usk request ko beech me rokhte ho or kuch perform karte ho, to ye element middleare kehlata hai
