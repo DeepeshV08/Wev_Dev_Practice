@@ -1,0 +1,10 @@
+Form Handling and working with the forms
+
+handle backend process of forms and making sure the data comign from any frontend lib, fw, templating engines , we still handle it at the backend
+
+
+1. Session and Cookie
+hum log kuch bhi data frontend par browser par rakh sakte hai and jab bhi aap kuch bhi request backend par karoge wo fe par saved data automatically backend par chala jaayega
+
+
+2. 
