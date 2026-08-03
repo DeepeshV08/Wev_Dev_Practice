@@ -14,4 +14,7 @@ app.get('/about', function(req,res){
     res.send("about page")
 })
 
+app.get('/function',(req,res) => {
+    res.send('Function Page')
+})
 app.listen(3000)
