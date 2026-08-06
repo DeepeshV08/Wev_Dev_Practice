@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Title goes">
+                <textarea placeholder="Write your task details here"></textarea>
+                <input type="submit" value="create task">
+            </form>
+        </div>
+        <div class="tasks">
+    <% if (tasks.length > 0) { %>
+
+        <% tasks.forEach((task) => { %>
+
+            <div class="task">
+                <h2><%= task.title %></h2>
+                <p><%= task.details %></p>
+            </div>
+
+        <% }) %>
+
+    <% } else { %>
+
+        <h3>No Task Yet</h3>
+
+    <% } %>
+</div>
+    </div>
+    <script src="/javascripts//script.js"></script>
+</body>
+</html>
