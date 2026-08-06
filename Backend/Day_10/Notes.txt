@@ -1,0 +1,20 @@
+Data Storage -
+
+Types of DBS - SQL || NOSQL
+
+SQL (Structred query language) - data ko ek roop me rakhna - tables
+NOSQL(Not only SQL) - stored in json format - we used mongoDB to store data
+
+what and why
+Backend me 2 server hote hai
+1. Application server
+2. Database server
+
+Database -> Collections -> Documents
+
+Code                   Database
+mongoose.connect -  database create
+model create     -  collections 
+CREATE code     -    documents
+
+terminologies - collections , documents , schemas , keys , models
