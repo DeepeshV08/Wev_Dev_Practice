@@ -1,0 +1,17 @@
+1. initialize a project
+
+2. express - install
+
+setting up parser for form
+setting up ejs for form 
+setting up public static files
+
+
+dynamic routing ->
+
+        dynamic routing
+        how to get data coming from frontend at backend route
+
+
+
+1. create index.js file
