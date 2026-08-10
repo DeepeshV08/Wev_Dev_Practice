@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+
+    <!-- Tailwind CSS CDN -->
+     <link rel="stylesheet" href="/stylesheet/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-900">
+
+    <div class="min-h-screen flex flex-col items-center py-10">
+        <div class="nav mb-10">
+            <a href="/">Back to Home</a>
+
+        </div>
+        <h1 class="text-4xl font-bold text-white mb-8">
+            All Users
+        </h1>
+
+        <div class="users flex flex-wrap justify-center gap-6">
+
+            <!-- User Card -->
+            <% users.forEach(function(user){ %>
+                <div class="bg-white rounded-2xl shadow-xl w-80 p-6 hover:scale-105 transition duration-300">
+
+                <!-- Avatar -->
+                <div class="w-20 h-20 overflow-hidden rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center text-white text-3xl font-bold mx-auto">
+                    <img class="w-full h-full" src="<%= user.image%>" alt="">
+                </div>
+
+                <!-- User Info -->
+                <div class="text-center mt-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">
+                        <%= user.name%>
+                    </h3>
+
+                    <h5 class="text-gray-500 mt-1">
+                        <%= user.email%>
+                    </h5>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex justify-between mt-6">
+
+                    <a href="/edit/<%= user._id%>"
+                        class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg font-medium transition">
+                        Edit User
+                    </a>
+
+                    <a href="/delete/<%= user._id%>"
+                        class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition">
+                        Delete
+                    </a>
+
+                </div>
+
+            </div>
+           <% })%>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+Authentication and Authorization
+
+Authentication - user ko profile dene se pahle ye check karn ahota hai ke use hai kaun - Authentication
+
+authorization - authorized to perform some tasks which are only allowesed to execute by the admin 
+
+server har baar bhul jata hai ki aap kon ho , ab kyuki server bhul jata hia ki aap kon ho to har bar bo har kaam ke liye aapse pucchega aap kon ho
